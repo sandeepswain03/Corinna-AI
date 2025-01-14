@@ -16,9 +16,7 @@ const OTPForm = dynamic(() => import("./otp-form"), {
   loading: Spinner,
 });
 
-type Props = {};
-
-const RegistrationFormStep = (props: Props) => {
+const RegistrationFormStep = () => {
   const {
     register,
     formState: { errors },
@@ -45,7 +43,7 @@ const RegistrationFormStep = (props: Props) => {
       return <OTPForm onOTP={onOTP} setOTP={setOnOTP} />;
   }
 
-  return <div>RegistrationFormStep</div>;
+  return <></>;
 };
 
 export default RegistrationFormStep;

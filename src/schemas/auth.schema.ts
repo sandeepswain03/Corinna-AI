@@ -39,6 +39,7 @@ export const UserRegistrationSchema: ZodType<UserRegistrationProps> = z
     message: "Your emails not match",
     path: ["confirmEmail"],
   });
+
 export type UserLoginProps = {
   email: string;
   password: string;

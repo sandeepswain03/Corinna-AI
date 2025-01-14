@@ -14,8 +14,8 @@ import { useState } from "react";
 export const useSignUpForm = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const { isLoaded, signUp, setActive } = useSignUp();
-  const { toast } = useToast();
   const router = useRouter();
+  const { toast } = useToast();
   const methods = useForm<UserRegistrationProps>({
     resolver: zodResolver(UserRegistrationSchema),
     defaultValues: {
