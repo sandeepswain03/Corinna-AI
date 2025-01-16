@@ -14,8 +14,8 @@ import clsx from "clsx";
 import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import parse from "html-react-parser";
-import { getMonthName } from "@/lib/utils";
+// import parse from "html-react-parser";
+// import { getMonthName } from "@/lib/utils";
 
 export default async function Home() {
   const posts:
@@ -66,7 +66,7 @@ export default async function Home() {
           {" you're"} not ready to commit you can get started for free.
         </p>
       </section>
-      <div className="flex  justify-center gap-4 flex-wrap mt-6">
+      <div className="flex  justify-center gap-4 flex-wrap my-6">
         {pricingCards.map((card) => (
           <Card
             key={card.title}
@@ -106,13 +106,13 @@ export default async function Home() {
         ))}
       </div>
 
-      <section className="flex justify-center items-center flex-col gap-4 mt-28">
+      {/* <section className="flex justify-center items-center flex-col gap-4 mt-28">
         <h2 className="text-4xl text-center">News Room</h2>
         <p className="text-muted-foreground text-center max-w-lg">
           Explore our insights on AI, technology, and optimizing your business.
         </p>
-      </section>
-      <section className="md:grid-cols-3 grid-cols-1 grid gap-5 container mt-8">
+      </section> */}
+      {/* <section className="md:grid-cols-3 grid-cols-1 grid gap-5 container mt-8">
         {posts &&
           posts.map((post) => (
             <Link href={`/blogs/${post.id}`} key={post.id}>
@@ -135,7 +135,7 @@ export default async function Home() {
               </Card>
             </Link>
           ))}
-      </section>
+      </section> */}
     </main>
   );
 }

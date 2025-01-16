@@ -1,19 +1,19 @@
-'use client'
-import React from 'react'
-import { useFormContext } from 'react-hook-form'
-import FormGenerator from '../form-generator'
-import { USER_LOGIN_FORM } from '@/constants/form'
+"use client";
+import React from "react";
+import { useFormContext } from "react-hook-form";
+import FormGenerator from "../form-generator";
+import { USER_LOGIN_FORM } from "@/constants/form";
 
 const LoginForm = () => {
   const {
     register,
     formState: { errors },
-  } = useFormContext()
+  } = useFormContext();
   return (
     <>
       <h2 className="text-gravel md:text-4xl font-bold">Login</h2>
       <p className="text-iridium md:text-sm">
-        You will receive a one time password
+        Login into application to access dashboard
       </p>
       {USER_LOGIN_FORM.map((field) => (
         <FormGenerator
@@ -25,7 +25,7 @@ const LoginForm = () => {
         />
       ))}
     </>
-  )
-}
+  );
+};
 
-export default LoginForm
+export default LoginForm;
