@@ -3,7 +3,7 @@ import { INTEGRATION_LIST_ITEMS } from "@/constants/integrations";
 import React from "react";
 import { Card, CardContent, CardDescription } from "../ui/card";
 import Image from "next/image";
-import IntegrationTrigger from "./integrationTrigger";
+import IntegrationTrigger from "./IntegrationTrigger";
 
 type Props = {
   connections: {
