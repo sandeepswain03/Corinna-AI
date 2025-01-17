@@ -1,4 +1,5 @@
 "use server";
+
 import { client } from "@/lib/prisma";
 import { clerkClient, currentUser } from "@clerk/nextjs";
 
@@ -139,6 +140,7 @@ export const onGetAllAccountDomains = async () => {
     console.log(error);
   }
 };
+
 export const onUpdatePassword = async (password: string) => {
   try {
     const user = await currentUser();

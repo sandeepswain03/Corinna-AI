@@ -21,7 +21,6 @@ function NavBar() {
       <ul className="gap-5 justify-between self-stretch my-auto text-sm leading-5 text-neutral-700 max-md:flex-wrap max-md:max-w-full font-normal hidden md:flex">
         <li>Home</li>
         <li>Pricing</li>
-        <li>News Room</li>
         <li>Features</li>
         <li>Contact us</li>
       </ul>

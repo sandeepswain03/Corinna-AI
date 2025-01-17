@@ -1,4 +1,5 @@
 "use server";
+
 import axios from "axios";
 
 export const onGetBlogPosts = async () => {
@@ -22,7 +23,6 @@ export const onGetBlogPosts = async () => {
         `${featuredImages}/${posts.data[i].featured_media}`
       );
       if (image) {
-        //we push a post object into the array
         console.log(image.data.media_details);
         const post: {
           id: string;
